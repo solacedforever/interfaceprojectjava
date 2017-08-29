@@ -5,9 +5,7 @@ public interface Fight {
   public String kick();
   public String shoot();
   public String slap();
-
   public default String drive(){
     return "drive a mile";
   }
-
 }

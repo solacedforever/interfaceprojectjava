@@ -11,11 +11,32 @@ public abstract class Soldier implements Fight {
   this.serialNumber = serialNumber;
   }
 
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public String getRank() {
+    return rank;
+  }
+
+  public void setRank(String rank) {
+    this.rank = rank;
+  }
+
+  public int getSerialNumber() {
+    return serialNumber;
+  }
+
+  public void setSerialNumber(int serialNumber) {
+    this.serialNumber = serialNumber;
+  }
+
   public abstract String speak();
 
-  public String ultraslap() {
-    return "MASSO SLAP";
-  }
   public String chew(){
     return "chew food";
   }
@@ -25,7 +46,5 @@ public abstract class Soldier implements Fight {
   public String trudge(){
     return "trudge";
   }
-
-
 }
 
